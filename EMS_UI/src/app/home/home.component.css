@@ -1,0 +1,20 @@
+h1 {
+  letter-spacing: 1px;
+}
+
+img {
+  transition: 0.4s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}

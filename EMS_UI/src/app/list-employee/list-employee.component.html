@@ -1,0 +1,60 @@
+<div class="container mt-4">
+
+  <h2 class="text-center mb-4 text-primary fw-bold">
+    Employee List
+  </h2>
+
+  <div class="table-responsive">
+
+    <table class="table table-hover table-bordered shadow">
+
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Salary</th>
+          <th width="280px">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let employee of employees">
+
+          <td>{{employee.id}}</td>
+          <td>{{employee.firstName}}</td>
+          <td>{{employee.lastName}}</td>
+          <td>₹ {{employee.salary}}</td>
+
+          <td>
+
+            <button
+              (click)="updateEmployee(employee.id)"
+              class="btn btn-info btn-sm me-2">
+              Update
+            </button>
+
+            <button
+              (click)="deleteEmployee(employee.id)"
+              class="btn btn-danger btn-sm me-2">
+              Delete
+            </button>
+
+            <button
+              (click)="viewEmployee(employee.id)"
+              class="btn btn-success btn-sm">
+              View
+            </button>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>

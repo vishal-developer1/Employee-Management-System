@@ -1,0 +1,19 @@
+.navbar-brand {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  margin-left: 12px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: yellow !important;
+  transform: translateY(-2px);
+}
+
+.active {
+  border-bottom: 2px solid white;
+}

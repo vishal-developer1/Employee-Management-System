@@ -1,0 +1,30 @@
+.navbar-brand {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-size: 16px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: yellow !important;
+  transform: translateY(-2px);
+}
+
+.active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
